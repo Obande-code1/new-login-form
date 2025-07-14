@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/login-form.css">
+	<title>Login Form</title>
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="tabs">
+			<button id="loginTap" class="active">Login</button>
+			<button id="registerTap">Register</button>
+		</div>
+
+		<form id="loginForm" class="form active">
+			<input type="email" name="email" placeholder="Input your email" required value="@gmail.com">
+			<input type="password" name="password" placeholder="Enter password" required>
+			<button type="submit" class="btn" onclick="myFunction()">Login</button>
+			<p class="or">Or continue with</p>
+
+			<div class="socials">
+				<button class="social"> <i class="fab fa-google"></i> </button>
+				<button class="social"><i class="fab fa-facebook"></i></button>
+				<button class="social"><i class="fab fa-twitter"></i></button>
+			</div>
+		</form>
+
+		<form id="registerForm" class="form">
+			<input type="text" name="text" placeholder="Fullname" required>
+			<input type="email" name="email" placeholder="Enter your email" required>
+			<input type="password" name="password" placeholder="Enter your password" required>
+			<input type="password" name="password" placeholder="Confirm your password" required>
+			<button type="submit" class="btn" id="reg" onclick="myRegister()">Register</button>
+			<p class="or">Or continue with</p>
+
+			<div class="socials">
+				<button class="social"> <i class="fab fa-google"></i> </button>
+				<button class="social"><i class="fab fa-facebook"></i></button>
+				<button class="social"><i class="fab fa-twitter"></i></button>
+			</div>
+		</form>
+	</div>
+
+	<script src="js/myScript.js"></script>
+
+</body>
+</html>
